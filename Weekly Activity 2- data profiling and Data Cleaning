@@ -24,13 +24,15 @@ Methodology:
   - aca-reportform-list-ds-ren
   - Aca-Case-list-ds-ren
   - Aca-student-list-ds-ren
+Data profiling 1.png
+Data Profiling 2.png
+data profilin 3.png
 
 
 3. Data Cleansing  
 - Created DataBrew recipes and ran successful jobs to clean each dataset.  
 - Standardized column formats and removed invalid rows.  
-
-(Screenshot: Data cleaning jobs)
+SS Data Cleaning.png
 
 4. Validation Rules  
 - Ensured data types matched schema expectations.  
@@ -43,8 +45,7 @@ Methodology:
 6. Lifecycle Rules  
 - Configured lifecycle policies in S3 for automatic archiving of student, case, and reportform data.  
 - Transition rules include Glacier Instant and Standard-IA.
-
-(Screenshot: Lifecycle configuration)
+SS Lifecycle Rule.png
 
 Tools and Technologies:
 - AWS S3
@@ -56,12 +57,11 @@ Tools and Technologies:
 Architecture Overview:  
 The system integrates EC2 (for ingestion), S3 (for storage), and Glue DataBrew (for profiling and cleaning).
 
-(Screenshot: System architecture diagram)
+SS 1 .png
 
 PowerShell Upload Command Used:
 Write-S3Object -Bucket academics-raw-ren -File "C:\Users\Administrator\Documents\academics-user-log.txt" -Key "/academic misconduct/academics-user-log/Ingestion/year=2025/quarter=1/month=1/day=25/server=ASVS-ren/academics-user-log.txt"
-
-(Screenshots: PowerShell terminal, Upload confirmation in S3)
+Powershell.png
 
 Deliverables:
 - DataBrew profile reports and cleaning job outputs  
