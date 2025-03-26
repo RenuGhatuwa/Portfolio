@@ -26,8 +26,3 @@ Methodology:
 4. Data Transformation:
 - Structure S3 path using year, quarter, month, and day.
 - Upload files using PowerShell to designated AWS S3 buckets.
-```powershell
-Write-S3Object `
- -Bucket academics-raw-ren `
- -File "RecordForm-List.csv" `
- -Key "/Academic misconduct/ReportForm-List/year=2025/quarter=1/month=1/day=20/server=AGVS-ren/RecordForm-List"
