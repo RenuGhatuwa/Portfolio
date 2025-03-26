@@ -25,4 +25,6 @@ Methodology:
 - Standardize filenames for ingestion (e.g., RecordForm-List.csv).
 4. Data Transformation:
 - Structure S3 path using year, quarter, month, and day.
+data ingestion 1.png
 - Upload files using PowerShell to designated AWS S3 buckets.
+powershell.png
