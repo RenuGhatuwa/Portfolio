@@ -53,7 +53,7 @@ Deliverables:
 - Folder-based S3 structure aligned to reporting needs
 
 Timeline:  
-Expected completion within one week, including design, testing, and deployment phases.
+Completed within 3 days, including design, testing, and deployment phases.
 
 Outcome:  
 The project delivers a scalable, low-maintenance solution for transforming raw academic records into structured summaries. It enhances operational visibility, reduces manual processing, and sets the foundation for ongoing automation and analytics.
