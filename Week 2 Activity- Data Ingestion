@@ -1,0 +1,33 @@
+Data Wrangling for Academic Misconduct Record Ingestion at UCW
+
+Project Title: Cloud-Based Data Wrangling and Ingestion for Academic Integrity Records
+
+Objective:
+The primary goal of this project is to design and implement a cloud-based data ingestion and wrangling solution for academic misconduct records at University Canada West (UCW). By organizing, formatting, and uploading structured data to Amazon S3, this system ensures accurate, traceable, and accessible datasets for downstream analytics and institutional compliance.
+
+Background:
+UCW collects academic misconduct data from various departments. To support centralized access, reporting, and auditing, this project establishes a consistent process to upload and structure these records into AWS S3. The system uses PowerShell to automate uploads with date-based directory logic and integrates with an AWS-hosted backend server and relational database schema.
+
+Dataset:
+The ingestion process includes:
+RecordForm-List.csv: A structured CSV of academic misconduct cases.
+Student, Case, and Report Schema: Designed for backend storage, mapping student data to specific misconduct incidents.
+
+Methodology:
+1. Data Collection:
+- Gather record forms from academic departments.
+- Format data into CSV structure.
+2. Data Assessment:
+- Review for missing values, improper formatting, and duplication.
+- Ensure naming conventions match upload rules.
+3. Data Cleaning:
+- Validate unique student IDs, case codes, and dates.
+- Standardize filenames for ingestion (e.g., RecordForm-List.csv).
+4. Data Transformation:
+- Structure S3 path using year, quarter, month, and day.
+- Upload files using PowerShell to designated AWS S3 buckets.
+```powershell
+Write-S3Object `
+ -Bucket academics-raw-ren `
+ -File "RecordForm-List.csv" `
+ -Key "/Academic misconduct/ReportForm-List/year=2025/quarter=1/month=1/day=20/server=AGVS-ren/RecordForm-List"
