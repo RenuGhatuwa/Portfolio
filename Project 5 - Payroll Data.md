@@ -6,7 +6,7 @@ Objective:
 The objective of this project is to design a cloud-based analytics platform that enables the City of Vancouver to perform descriptive analysis on payroll data. The platform provides insights into workforce structure, compensation distribution, and payroll classification through data profiling, summarization, and storage in a structured format.
 
 Background:  
-The City of Vancouver's payroll records were previously stored on-premise, limiting visibility, scalability, and reporting capabilities. This project modernizes the system using AWS cloud services to enable descriptive analytics, allowing the city to understand historical payroll trends, employee classifications, and compensation structures.
+The City of Vancouver previously managed payroll documentation at its site location but this practice blocked potential data analysis and restricted its growth as well as operational flexibility. The city found itself unable to process data effectively or report results promptly because of the various constraints present. AWS provided the necessary tools to upgrade payroll data management through cloud services which solved these efficiency problems. Strategic planning for workforce development alongside informed decision-making becomes achievable because AWS advances the understanding of employee categories and payroll allocations and compensation records.
 
 Dataset:  
 The dataset contains structured payroll information, including employee roles, wage ranges, classification types, and organizational groupings. The data was anonymized and generalized for analysis and reporting.
@@ -14,12 +14,11 @@ The dataset contains structured payroll information, including employee roles, w
 Methodology:
 
 1. Data Ingestion:  
-Raw payroll files in CSV format were uploaded to Amazon S3 using secure ingestion pipelines.
-
+Raw payroll files in CSV format were securely ingested into Amazon S3 using encrypted channels and predefined pipeline configurations to ensure data integrity and accessibility.
 ![drawio](https://github.com/user-attachments/assets/a95609c1-fa5b-4784-a93e-19e9ac9442de)
 
 3. Data Profiling and Assessment:  
-AWS Glue DataBrew was used to profile datasets and identify patterns such as missing values, field types, and outliers. Summary metrics included row counts, column distributions, and data type consistency.
+The datasets were evaluated using AWS Glue DataBrew, which identified field types, missing values, statistical abnormalities, and problems with data quality. The groundwork for precise transformation was laid by the profile reports the tool produced, which gave a summary of record counts, column distributions, and outlier detection.
 ![data profiling](https://github.com/user-attachments/assets/145195d8-572d-408b-aa72-d761f963a75e)
 
 
@@ -56,4 +55,5 @@ Timeline:
 Completed in approximately 2 weeks, including ingestion setup, transformation workflows, and validation.
 
 Outcome:  
-The platform enables the City of Vancouver to perform descriptive analytics on payroll data, supporting better workforce planning, financial reporting
+The City of Vancouver enhances its workforce financial data management abilities through a properly deployed AWS-based payroll data analytics platform. A cloud-based architecture provides the city with three essential benefits: scalable storage together with automatic data transformation and on-demand querying features. The cleaned systematic records help organizations gain full visibility into their worker demographics while showcasing departmental wage patterns along with payroll classification types. The delivery of financial planning and budgeting procedures improves through rapid decision support from analysts who generate reports on-demand using Amazon Athena alongside AWS Glue. Through its establishment the platform supports sustainable public resource management by providing data-based decisions and clear payroll transparency mechanisms.
+
